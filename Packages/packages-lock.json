@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.akbiggs.unitytimer": {
+      "version": "file:UnityTimer",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "2.9.3",
       "depth": 0,

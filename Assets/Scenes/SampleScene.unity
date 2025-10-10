@@ -1745,6 +1745,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1692720651}
+  - component: {fileID: 1692720653}
+  - component: {fileID: 1692720652}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -1772,6 +1774,33 @@ Transform:
   - {fileID: 1057327314}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1692720652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692720650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475c8930f69324d469aabff073823fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1692720653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692720650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5752567d3383f64391edc4486279eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balls: []
+  xRange: 10
+  zRange: 10
 --- !u!1 &1759015114
 GameObject:
   m_ObjectHideFlags: 0
