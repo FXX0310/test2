@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityTimer;
@@ -6,9 +6,9 @@ using UnityTimer;
 //public class ball : MonoBehaviour
 //{
 //    // Start is called before the first frame update
-//    public GameObject[] balls; // ´æ´¢ËùÓĞĞ¡ÇòµÄÊı×é
-//    public float xRange = 10f; // XÖáËæ»ú·¶Î§
-//    public float zRange = 10f; // ZÖáËæ»ú·¶Î§
+//    public GameObject[] balls; // å­˜å‚¨æ‰€æœ‰å°çƒçš„æ•°ç»„
+//    public float xRange = 10f; // Xè½´éšæœºèŒƒå›´
+//    public float zRange = 10f; // Zè½´éšæœºèŒƒå›´
 
 
 
@@ -16,10 +16,10 @@ using UnityTimer;
 //    {
 //        balls = GameObject.FindGameObjectsWithTag("ball");
 
-//        // ¿ªÊ¼Ëæ»úÒÆ¶¯Ğ­³Ì
+//        // å¼€å§‹éšæœºç§»åŠ¨åç¨‹
 //        StartCoroutine(RandomizePositions());
 
-//        // ¿ªÊ¼Î»ÖÃÈÕÖ¾Êä³öĞ­³Ì
+//        // å¼€å§‹ä½ç½®æ—¥å¿—è¾“å‡ºåç¨‹
 //        StartCoroutine(LogPositions());
 //    }
 
@@ -33,24 +33,24 @@ using UnityTimer;
 //    {
 //        while (true)
 //        {
-//            // µÈ´ı1Ãë
+//            // ç­‰å¾…1ç§’
 //            yield return new WaitForSeconds(1f);
 
-//            // ±éÀúËùÓĞĞ¡Çò²¢Ëæ»úÉèÖÃÎ»ÖÃ
+//            // éå†æ‰€æœ‰å°çƒå¹¶éšæœºè®¾ç½®ä½ç½®
 //            foreach (GameObject ball in balls)
 //            {
-//                // »ñÈ¡µ±Ç°Î»ÖÃµÄYÖµ£¨±£³Ö²»±ä£©
+//                // è·å–å½“å‰ä½ç½®çš„Yå€¼ï¼ˆä¿æŒä¸å˜ï¼‰
 //                float currentY = ball.transform.position.y;
 
-//                // Éú³ÉËæ»úµÄXºÍZ×ø±ê
+//                // ç”Ÿæˆéšæœºçš„Xå’ŒZåæ ‡
 //                float randomX = Random.Range(-xRange, xRange);
 //                float randomZ = Random.Range(-zRange, zRange);
 
-//                // ÉèÖÃĞÂÎ»ÖÃ£¨±£³ÖY×ø±ê²»±ä£©
+//                // è®¾ç½®æ–°ä½ç½®ï¼ˆä¿æŒYåæ ‡ä¸å˜ï¼‰
 //                ball.transform.position = new Vector3(randomX, currentY, randomZ);
 //            }
 
-//            Debug.Log("ËùÓĞĞ¡ÇòÎ»ÖÃÒÑ¸üĞÂ");
+//            Debug.Log("æ‰€æœ‰å°çƒä½ç½®å·²æ›´æ–°");
 //        }
 //    }
 
@@ -58,23 +58,23 @@ using UnityTimer;
 //    {
 //        while (true)
 //        {
-//            // µÈ´ı0.5Ãë
+//            // ç­‰å¾…0.5ç§’
 //            yield return new WaitForSeconds(0.5f);
 
-//            // Êä³öËùÓĞĞ¡ÇòµÄÎ»ÖÃĞÅÏ¢
-//            Debug.Log("=== Ğ¡ÇòÎ»ÖÃ±¨¸æ ===");
+//            // è¾“å‡ºæ‰€æœ‰å°çƒçš„ä½ç½®ä¿¡æ¯
+//            Debug.Log("=== å°çƒä½ç½®æŠ¥å‘Š ===");
 //            for (int i = 0; i < balls.Length; i++)
 //            {
-//                if (balls[i] != null) // È·±£Ğ¡ÇòÈÔÈ»´æÔÚ
+//                if (balls[i] != null) // ç¡®ä¿å°çƒä»ç„¶å­˜åœ¨
 //                {
 //                    Vector3 pos = balls[i].transform.position;
-//                    // Ìí¼ÓĞ¡ÇòÃû³ÆĞÅÏ¢
+//                    // æ·»åŠ å°çƒåç§°ä¿¡æ¯
 //                    string ballName = balls[i].name;
-//                    Debug.Log($"Ğ¡Çò {i} (Ãû³Æ: {ballName}): Î»ÖÃ(X={pos.x:F2}, Y={pos.y:F2}, Z={pos.z:F2})");
+//                    Debug.Log($"å°çƒ {i} (åç§°: {ballName}): ä½ç½®(X={pos.x:F2}, Y={pos.y:F2}, Z={pos.z:F2})");
 //                }
 //                else
 //                {
-//                    Debug.LogWarning($"Ğ¡Çò {i} ÒÑ±»Ïú»Ù»ò²»´æÔÚ");
+//                    Debug.LogWarning($"å°çƒ {i} å·²è¢«é”€æ¯æˆ–ä¸å­˜åœ¨");
 //                }
 //            }
 //            Debug.Log("==================");
@@ -89,11 +89,11 @@ using UnityTimer;
 
 public class ball : MonoBehaviour
 {
-    public GameObject[] balls; // ´æ´¢ËùÓĞĞ¡ÇòµÄÊı×é
-    public float xRange = 10f; // XÖáËæ»ú·¶Î§
-    public float zRange = 10f; // ZÖáËæ»ú·¶Î§
+    public GameObject[] balls; // å­˜å‚¨æ‰€æœ‰å°çƒçš„æ•°ç»„
+    public float xRange = 10f; // Xè½´éšæœºèŒƒå›´
+    public float zRange = 10f; // Zè½´éšæœºèŒƒå›´
 
-    // Ê¹ÓÃ UnityTimer Ìæ´úĞ­³Ì
+    // ä½¿ç”¨ UnityTimer æ›¿ä»£åç¨‹
     private Timer _positionTimer;
     private Timer _logTimer;
 
@@ -101,56 +101,56 @@ public class ball : MonoBehaviour
     {
         balls = GameObject.FindGameObjectsWithTag("ball");
 
-        // Ê¹ÓÃ UnityTimer Ìæ´úĞ­³Ì
-        // Ã¿1ÃëËæ»ú¸üĞÂÎ»ÖÃ
+        // ä½¿ç”¨ UnityTimer æ›¿ä»£åç¨‹
+        // æ¯1ç§’éšæœºæ›´æ–°ä½ç½®
         _positionTimer = Timer.Register(1f, RandomizePositions, isLooped: true);
 
-        // Ã¿0.5ÃëÊä³öÎ»ÖÃĞÅÏ¢
+        // æ¯0.5ç§’è¾“å‡ºä½ç½®ä¿¡æ¯
         _logTimer = Timer.Register(0.5f, LogPositions, isLooped: true);
     }
 
     void Update()
     {
-        // Update ·½·¨ÏÖÔÚ¿ÉÒÔ±£³ÖÎª¿Õ£¬»òÕßÌí¼ÓÆäËûÂß¼­
+        // Update æ–¹æ³•ç°åœ¨å¯ä»¥ä¿æŒä¸ºç©ºï¼Œæˆ–è€…æ·»åŠ å…¶ä»–é€»è¾‘
     }
 
     void RandomizePositions()
     {
-        // ±éÀúËùÓĞĞ¡Çò²¢Ëæ»úÉèÖÃÎ»ÖÃ
+        // éå†æ‰€æœ‰å°çƒå¹¶éšæœºè®¾ç½®ä½ç½®
         foreach (GameObject ball in balls)
         {
             if (ball == null) continue;
 
-            // »ñÈ¡µ±Ç°Î»ÖÃµÄYÖµ£¨±£³Ö²»±ä£©
+            // è·å–å½“å‰ä½ç½®çš„Yå€¼ï¼ˆä¿æŒä¸å˜ï¼‰
             float currentY = ball.transform.position.y;
 
-            // Éú³ÉËæ»úµÄXºÍZ×ø±ê
+            // ç”Ÿæˆéšæœºçš„Xå’ŒZåæ ‡
             float randomX = Random.Range(-xRange, xRange);
             float randomZ = Random.Range(-zRange, zRange);
 
-            // ÉèÖÃĞÂÎ»ÖÃ£¨±£³ÖY×ø±ê²»±ä£©
+            // è®¾ç½®æ–°ä½ç½®ï¼ˆä¿æŒYåæ ‡ä¸å˜ï¼‰
             ball.transform.position = new Vector3(randomX, currentY, randomZ);
         }
 
-        Debug.Log("ËùÓĞĞ¡ÇòÎ»ÖÃÒÑ¸üĞÂ");
+        Debug.Log("æ‰€æœ‰å°çƒä½ç½®å·²æ›´æ–°");
     }
 
     void LogPositions()
     {
-        // Êä³öËùÓĞĞ¡ÇòµÄÎ»ÖÃĞÅÏ¢
-        Debug.Log("=== Ğ¡ÇòÎ»ÖÃ±¨¸æ ===");
+        // è¾“å‡ºæ‰€æœ‰å°çƒçš„ä½ç½®ä¿¡æ¯
+        Debug.Log("=== å°çƒä½ç½®æŠ¥å‘Š ===");
         for (int i = 0; i < balls.Length; i++)
         {
-            if (balls[i] != null) // È·±£Ğ¡ÇòÈÔÈ»´æÔÚ
+            if (balls[i] != null) // ç¡®ä¿å°çƒä»ç„¶å­˜åœ¨
             {
                 Vector3 pos = balls[i].transform.position;
-                // Ìí¼ÓĞ¡ÇòÃû³ÆĞÅÏ¢
+                // æ·»åŠ å°çƒåç§°ä¿¡æ¯
                 string ballName = balls[i].name;
-                Debug.Log($"Ğ¡Çò {i} (Ãû³Æ: {ballName}): Î»ÖÃ(X={pos.x:F2}, Y={pos.y:F2}, Z={pos.z:F2})");
+                Debug.Log($"å°çƒ {i} (åç§°: {ballName}): ä½ç½®(X={pos.x:F2}, Y={pos.y:F2}, Z={pos.z:F2})");
             }
             else
             {
-                Debug.LogWarning($"Ğ¡Çò {i} ÒÑ±»Ïú»Ù»ò²»´æÔÚ");
+                Debug.LogWarning($"å°çƒ {i} å·²è¢«é”€æ¯æˆ–ä¸å­˜åœ¨");
             }
         }
         Debug.Log("==================");
@@ -158,7 +158,7 @@ public class ball : MonoBehaviour
 
     void OnDestroy()
     {
-        // Ïú»ÙÊ±È¡ÏûËùÓĞ Timer
+        // é”€æ¯æ—¶å–æ¶ˆæ‰€æœ‰ Timer
         if (_positionTimer != null)
             _positionTimer.Cancel();
 

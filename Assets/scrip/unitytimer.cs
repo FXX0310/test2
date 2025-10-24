@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityTimer;
@@ -21,10 +21,10 @@ public class unitytimer : MonoBehaviour
 
     private void Awake()
     {
-        // ×¢²áÒ»¸ö»ù´¡¼ÆÊ±Æ÷£¨5ÃëºóÖ´ĞĞ£©
+        // æ³¨å†Œä¸€ä¸ªåŸºç¡€è®¡æ—¶å™¨ï¼ˆ5ç§’åæ‰§è¡Œï¼‰
         _basicTimer = Timer.Register(5f, () =>
         {
-            Debug.Log("»ù´¡¼ÆÊ±Æ÷Íê³É£¡");
+            Debug.Log("åŸºç¡€è®¡æ—¶å™¨å®Œæˆï¼");
         });
     }
 
@@ -33,7 +33,7 @@ public class unitytimer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             _basicTimer.Cancel();
-            Debug.Log("¼ÆÊ±Æ÷ÒÑÈ¡Ïû");
+            Debug.Log("è®¡æ—¶å™¨å·²å–æ¶ˆ");
         }
     }
 
